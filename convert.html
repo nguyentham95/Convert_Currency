@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <form action="">
+        <table>
+        <tr>
+            <th style="color:blue">Amount</th>
+            <th style="color:blue">From currency</th>
+            <th style="color:blue">To currency</th>
+        </tr>
+        <tr>
+            <td><input type="number" placeholder="Amount" id="amount"></td>
+            <td><select name="" id="fromCurrency" style="width: 150px; height: 20px; color : rgb(234, 11, 70);"> 
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </td>
+            <td><select name="" id="toCurrency" style="width: 150px; height: 20px; color : rgb(234, 11, 70);">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </td>    
+            
+        </tr>
+    
+        
+        </table><br>
+        <td><button type="button" onclick="Convert();">Convert</button></td>
+        
+    </form>
+    <p id="result" style="color:red"></p>
+</body>
+</html>
+<script src="convert.js"></script>
